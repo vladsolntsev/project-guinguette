@@ -26,67 +26,224 @@
             </li>
         </ul>
     </nav>
-    <!-- section programmation -->
-<section>
-    <div id=titreProgrammation>
-        <h2>Programmation</h2>
+
+<!-- main picture section -->
+    <div id='landingSection'>
+        <video autoplay muted loop id="videoChezAlriq">
+            <source src="videos/chezAlriq.mp4" type="video/mp4">
+        </video>
+        <!-- Test avec un image
+        <img id="landingPicture"
+             src="https://www.bordeauxtendances.fr/wp-content/uploads/2020/06/Guinguette-Chez-Alriq--1300x520.jpg"
+             alt="Bienvenue à la Guinguette, chez Alriq">
+        -->
+        <div id='bienvenue'>
+            <div class="spotName">
+                <h1>Bienvenue chez Alriq</h1>
+            </div>
+            <div id="mainPageLogo">
+                <img id="mainLogo"
+                     src="https://www.laguinguettechezalriq.com/wp-content/uploads/2019/04/logo-chez-alriq-guinguette-bordeaux-ok.png"
+                     alt="Logo de la Guinguette, chez Alriq">
+            </div>
+        </div>
+        <div id="contactSticky"><a href="#contact">Réserver</a></div>
     </div>
-    <div id="programmation">
-        <div id="event1">
-            <p>Concert de Neffex</p>
+<!-- End of main picture section -->
 
-            <img id="event1photo" src="images/neffex.jpg" alt="Photo du premier évènement">
-            <div class="dateEvent">
-                <p>Le 20 octobre 2020</p>
+<!-- section programmation -->
+    <section>
+        <div id=titreProgrammation>
+            <h2>Programmation</h2>
+        </div>
+        <div id="programmation">
+            <div id="event1">
+                <p>Concert de Neffex</p>
+                <img id="event1photo" src="images/neffex.jpg" alt="Photo du premier évènement">
+                <div class="dateEvent">
+                    <p>Le 20 octobre 2020</p>
+                </div>
+                <div>
+                    <img class="eventClick" src="images/arrow.svg" alt="Plus d'infos" id="arrow-img1" data-id="1">
+                </div>
+                <div class="eventDescription" id="event1description">
+                    <p class=eventText>
+                        Called a profit
+                        If I hear you talkin' shit
+                        Don't get caught in it
+                    </p>
+                    <p>Prix : 99c</p>
+                </div>
             </div>
-            <div>
-                <img class="eventClick" src="images/arrow.svg" alt="Plus d'infos" id="arrow-img1" data-id="1">
+            <div id="event2">
+                <p>Concert de Rim'k</p>
+                <img id="event2photo" src="images/rimk.jpg" alt="Photo du deuxième évènement">
+                <div class="dateEvent">
+                    <p>Le 25 octobre 2020</p>
+                </div>
+                <div>
+                    <img class="eventClick" src="images/arrow.svg" alt="Plus d'infos" data-id="2">
+                </div>
+                <div class="eventDescription" id="event2description">
+                    <p class=eventText>Empreintes, photos, enquêtes, photos
+                        Quand t'es dans la merde, y a plus d'potos
+                    </p>
+                    <p>Prix : 99c</p>
+                </div>
             </div>
-            <div class="eventDescription" id="event1description">
-                <p class=eventText>
-                    Called a profit
-                    If I hear you talkin' shit
-                    Don't get caught in it
-                </p>
-                <p>Prix : 99c</p>
+            <div id="event3">
+                <p>Concert de Shaka Ponk</p>
+                <img id="event3photo" src="images/shacaponk.jpg" alt="Photo du troisième évènement">
+                <div class="dateEvent">
+                    <p>Le 15 novembre 2020</p>
+                </div>
+                <div>
+                    <img class="eventClick" src="images/arrow.svg" alt="Plus d'infos" data-id="3">
+                </div>
+                <div class="eventDescription" id="event3description">
+                    <p class=eventText>War to the east, Pain to the west
+                        War is at least, What we do 'best</p>
+                    <p>Prix : 99c</p>
+                </div>
             </div>
         </div>
-
-        <div id="event2">
-            <p>Concert de Rim'k</p>
-            <img id="event2photo" src="images/rimk.jpg" alt="Photo du deuxième évènement">
-            <div class="dateEvent">
-                <p>Le 25 octobre 2020</p>
-            </div>
-            <div>
-                <img class="eventClick" src="images/arrow.svg" alt="Plus d'infos" data-id="2">
-            </div>
-            <div class="eventDescription" id="event2description">
-                <p class=eventText>Empreintes, photos, enquêtes, photos
-                    Quand t'es dans la merde, y a plus d'potos
-                </p>
-                <p>Prix : 99c</p>
-            </div>
-        </div>
-
-        <div id="event3">
-            <p>Concert de Shaka Ponk</p>
-            <img id="event3photo" src="images/shacaponk.jpg" alt="Photo du troisième évènement">
-            <div class="dateEvent">
-                <p>Le 15 novembre 2020</p>
-            </div>
-            <div>
-                <img class="eventClick" src="images/arrow.svg" alt="Plus d'infos" data-id="3">
-            </div>
-            <div class="eventDescription" id="event3description">
-                <p class=eventText>War to the east, Pain to the west
-                    War is at least, What we do 'best</p>
-                <p>Prix : 99c</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 <!-- fin de la section programmation -->
-<script src="script.js"></script>
+
+<!-- History section -->
+    <h2>Notre histoire</h2>
+    <div id='histoire'>
+        <img id="histoirePicture"
+             src="https://i0.wp.com/www.visiter-bordeaux.eu/wp-content/uploads/2019/06/11254157_833642916718059_3292309153825878100_n.jpg?fit=960%2C640&ssl=1"
+             alt="Histoire de la guinguette, chez Alriq">
+    </div>
+    <div id='notreHistoire'>
+        <p class="date">1990</p>
+        <p>Rose et Alriq repèrent, en bord de Garonne,
+            un terrain en jachère enclavé dans une zone
+            d’activités… inactive. La rive droite est en
+            pleine transformation. Les quais de Queyries
+            resteront en « transition » une dizaine d’années,
+            parsemés de terrains vagues, d’habitations rescapées,
+            de hangars vides, traversés par une voie ferrée cheminant
+            jusqu’aux Grands Moulins de Paris. Un quartier populaire en transition.
+            Le port autonome accorde l’autorisation d’occuper le terrain,<br>
+            la Guinguette chez Alriq est née ! Oh, pas du jour au lendemain,
+            non. Fruit de l’imagination fertile, baroque et engagée d’Alriq,
+            de cette friche allait émerger et se dessiner au fil du temps un
+            vrai jardin des délices. Le projet est de remettre au goût du jour
+            l’esprit guinguette, véritable symbole du folklore français et de
+            créer une sorte de cabaret populaire où tout le monde pourrait venir
+            danser et se restaurer. A l’abri de la frénésie urbaine, Alriq à toujours
+            su, durant ces 23 années, garantir des moments de rencontres, d’échanges
+            et de générosité autour d’artistes d’ici et d’ailleurs.
+        </p>
+        <p class="date">2014</p>
+        <p>
+            C’est dans l’esprit de cet héritage que le flambeau est repris par une petite
+            équipe de mordus, dont un autre Alriq, mais au féminin cette fois. Le contexte
+            est tout autre. La Guinguette, aujourd’hui au cœur du parc des Angéliques, participe
+            à l’essor du quartier dans sa dimension culturelle et sociale. Elle accueille un
+            public toujours plus nombreux, offrant une aire de mixité sociale intergénérationnelle,
+            ouverte à tous sans distinctions, un espace familial, convivial et participatif qui
+            vibre au rythme des musiques du monde. Car la musique reste l’âme de la Guinguette.
+            Éclectique, festive, vibratoire ou poétique, la musique nous invite chaque soir à un
+            voyage bercé d’émotions et d’espoir.<br>
+            Résolument tourné vers l’optimisme, la Guinguette chez Alriq est un lieu qui cultive
+            l’imaginaire et l’impertinence avec passion!
+        </p>
+    </div>
+<-- End of history section -->
+<!-- Contact section -->
+    <section id='formulaire'>
+        <h2>Contact / Réservations</h2>
+        <p>Envie de réserver vos billets dès aujourd'hui ? Besoin d'informations ?</p>
+        <p>Nous vous répondrons au plus vite !</p>
+        <p>Réservations possibles jusqu'à 24h avant l\'évènement</p>
+        <form>
+            <div>
+                <div id='demandeInformations'>Demande d'infomations</div>
+                <div id='reservations'>Réservations</div>
+            </div>
+            <div>
+                <label for = 'prenom'>Prénom :</label>
+                <input type='text' id='prenom' name='user_first_name'>
+            </div>
+            <div>
+                <label for ='nom'>Nom :</label>
+                <input type = 'text' id = 'nom' name = 'user_last_name'>
+            </div>
+            <div>
+                <label for='e-mail'>e-mail :</label>
+                <input type = 'email' id='e-mail' name='user_mail'>
+            </div>
+            <div>
+                <label for='telephone'>Téléphone :</label>
+                <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
+            </div>
+            <!--
+            <div>
+                <label for = "sujet"></label>
+                <select id="sujet" name="user_subject">
+                    <option value='Reservations'>Réservations</option>
+                    <option value='Demande d\'informations'>Demande d'informations</option>
+                </select>
+            </div>
+            -->
+            <div>
+                <label for='message'>Message :</label>
+                <textarea id='message' name='user_message'></textarea>
+            </div>
+            <div  class='button'>
+                <button  type='submit'>Envoyer</button>
+            </div>
+        </form>
+    </section>
+<!-- End of contact section -->
+<!-- footer section -->
+    <div class="footer">
+        <div class="footerItems">
+            <a href="#programmation" alt="Lien vers la programmation">
+                Programmation
+            </a>
+        </div>
+        <div class="footerItems">
+            <a href="#restauration" alt="Lien vers la restauration">
+                Restauration
+            </a>
+        </div>
+        <div class="footerItems">
+            <a href="#histoire" alt="Lien vers l\'histoire">
+                Histoire
+            </a>
+        </div>
+        <div class="footerItems">
+            <a href="#contact" alt="Lien vers le contact">
+                Contact
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="icon">
+            <a href="" alt="Lien vers Facebook">
+                <img src="icons/facebook.svg" class="icon" alt="Icone Facebook">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="" alt="Lien vers instagram">
+                <img src="icons/instagram.svg" class="icon" alt="Icone Instagram">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="" alt="Lien vers Youtube">
+                <img src="icons/youtube.svg" class="icon" alt="Icone youtube">
+            </a>
+        </div>
+    </div>
+<-- End of footer section>
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scriptContact.js"></script>
+<script type="text/javascript" src="scriptMainPicture.js"></script>
 </body>
 </html>
