@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,20 @@
 </head>
 <body>
     <div class="burger-menu" id="burger">
-        &#9776;
     </div>
     <nav id="menu-burger">
         <ul>
             <li>
-                <a href="#titreprogrammation">Programme</a>
+                <a href="#titreProgrammation">Programme</a>
             </li>
             <li>
-                <a href="#">Restauration</a>
+                <a href="#restauration">Restauration</a>
             </li>
             <li>
-                <a href="#">Histoire</a>
+                <a href="#titreHistoire">Histoire</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#formulaire">Contact</a>
             </li>
         </ul>
     </nav>
@@ -112,7 +112,7 @@
 
 <!--start menu section-->
 <section>
-    <h2>La restauration</h2>
+    <h2 id="restauration">La restauration</h2>
     <article><img src="https://i.ibb.co/Sxqcv1x/montage.jpg" alt="montage" border ="0" /></article>
     <table>
         <thead>
@@ -192,7 +192,7 @@
 <!--end menu section-->
 
 <!-- History section -->
-    <h2>Notre histoire</h2>
+    <h2 id="titreHistoire">Notre histoire</h2>
     <div id='histoire'>
         <img id="histoirePicture"
              src="https://i0.wp.com/www.visiter-bordeaux.eu/wp-content/uploads/2019/06/11254157_833642916718059_3292309153825878100_n.jpg?fit=960%2C640&ssl=1"
@@ -262,7 +262,7 @@
                 <label for='telephone'>Téléphone :</label>
                 <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
             </div>
-            <!--
+            <!-- This is just a test
             <div>
                 <label for = "sujet"></label>
                 <select id="sujet" name="user_subject">
@@ -323,20 +323,13 @@
     </div>
 
 <!-- End of footer section-->
-=======
-<!-- End of footer section -->
 
+<!-- End  of programmation section -->
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scriptNavProgram.js"></script>
 <script type="text/javascript" src="scriptContact.js"></script>
 <script type="text/javascript" src="scriptMainPicture.js"></script>
 
 
-
-<!-- End  of programmation section-->
-
-<!-- End  of programmation section -->
-
-<script src="scriptNavProgram.js"></script>
 </body>
 </html>
