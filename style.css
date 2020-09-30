@@ -9,6 +9,11 @@ body{
 }
 
 /* Navigation bar css */
+#menu-burger a {
+    text-decoration: none;
+    color: white;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -22,7 +27,6 @@ nav {
 li {
     padding-top: 10px;
     font-size: 20px;
-    color: white;
 }
 
 @media screen and (max-width: 600px) {
