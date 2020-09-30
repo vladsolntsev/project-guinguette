@@ -1,0 +1,32 @@
+/* debut du style de la programmation */
+
+#programmation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.eventDescription {
+    display: none;
+}
+
+.eventText {
+    width: 15em;
+}
+
+.eventClick {
+    height: 3em;
+    width: 3em;
+}
+
+.dateEvent {
+    font-weight: bold;
+}
+
+#event1photo, #event2photo, #event3photo {
+    height: 15em;
+    width: 15em
+}
+
+/* fin du style de la programmation */
