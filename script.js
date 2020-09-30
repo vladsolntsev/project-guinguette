@@ -8,7 +8,7 @@ burger.addEventListener('click', event => {
 /* End JS Navigation */
 
 
-/*script pour les fleches en dessous de la programmation */
+/*JS Programmation Section */
 
 const buttons = document.getElementsByClassName('eventClick');
 
@@ -19,5 +19,5 @@ for (let i = 0; i < buttons.length; i++) {
     description.classList.toggle('eventDescription');
   })
 }
-/* fin du script des fleches de la programmation */
+/* End JS Programmation Section */
 
