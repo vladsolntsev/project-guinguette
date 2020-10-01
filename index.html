@@ -257,22 +257,22 @@
                 <div id='reservations'>Réservations</div>
             </div>
             <div class="contactItems">
-                <div>Prénom : </div>
+                <div class="contactTitles">Prénom : </div>
                 <label for = 'prenom'></label>
                 <input type='text' id='prenom' name='user_first_name'>
             </div>
             <div class="contactItems">
-                <div>Nom : </div>
+                <div class="contactTitles">Nom : </div>
                 <label for ='nom'></label>
                 <input type = 'text' id = 'nom' name = 'user_last_name'>
             </div>
             <div class="contactItems">
-                <div>e-mail : </div>
+                <div class="contactTitles">e-mail : </div>
                 <label for='e-mail'></label>
                 <input type = 'email' id='e-mail' name='user_mail'>
             </div>
             <div class="contactItems">
-                <div>Téléphone : </div>
+                <div class="contactTitles">Téléphone : </div>
                 <label for='telephone'></label>
                 <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
             </div>
@@ -286,9 +286,9 @@
             </div>
             -->
             <div>
-                <div>Message : </div>
+                <div class="contactTitles">Message : </div>
                 <label for='message'></label>
-                <textarea id='message' name='user_message'></textarea>
+                <textarea id='message' name='user_message' rows="10"></textarea>
             </div>
             <div  class='button'>
                 <button  type='submit'>Envoyer</button>

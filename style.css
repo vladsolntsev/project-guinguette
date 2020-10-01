@@ -188,10 +188,9 @@ h1 {
     margin-bottom: 10%;
 }
 
-#form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+form {
+    margin-left: 36%;
+    margin-top: 4%;
 }
 
 #contactPresentation{
@@ -199,6 +198,7 @@ h1 {
 }
 
 #demandeInformations {
+    font-size: 2em;
     display: inline-block;
     background-color: blue;
     color: beige;
@@ -207,6 +207,7 @@ h1 {
 }
 
 #reservations {
+    font-size: 2em;
     display: inline-block;
     color: beige;
     background-color: lightgrey;
@@ -216,7 +217,19 @@ h1 {
 
 contactItems {
 display: flex;
-margin-left: 43%;
+margin-left: 38%;
+}
+
+input, textarea {
+    width: 24%;
+}
+
+.contactTitles {
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1.3em;
 }
 
 /* End of contact section */
