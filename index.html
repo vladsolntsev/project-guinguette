@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <div class="burger-menu" id="burger">
         &#9776;
     </div>
@@ -37,9 +38,8 @@
              src="https://www.bordeauxtendances.fr/wp-content/uploads/2020/06/Guinguette-Chez-Alriq--1300x520.jpg"
              alt="Bienvenue à la Guinguette, chez Alriq">
         -->
-        <!-- Title to add
-        <div id='bienvenue'>
 
+        <div id='bienvenue'>
             <div class="spotName">
                 <h1>Bienvenue chez Alriq</h1>
             </div>
@@ -50,7 +50,10 @@
                      alt="Logo de la Guinguette, chez Alriq">
             </div>
         </div>
-        -->
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
         <div id="contactSticky"><a href="#contact">Réserver</a></div>
     </div>
    
@@ -118,7 +121,7 @@
 <!--start menu section-->
 <section>
     <h2 id="restauration">La restauration</h2>
-    <article><img src="https://i.ibb.co/Sxqcv1x/montage.jpg" alt="montage" border ="0" /></article>
+    <article><img id="imageRestauration" src="https://i.ibb.co/Sxqcv1x/montage.jpg" alt="montage"></article>
     <table>
         <thead>
           <tr>
@@ -246,7 +249,7 @@
         <div id="contactPresentation">
             <p>Envie de réserver vos billets dès aujourd'hui ? Besoin d'informations ?</p>
             <p>Nous vous répondrons au plus vite !</p>
-            <p>Réservations possibles jusqu'à 24h avant l\'évènement</p>
+            <p>Réservations possibles jusqu'à 24h avant lévènement</p>
         </div>
         <form>
             <div class="contactItems">
@@ -254,19 +257,23 @@
                 <div id='reservations'>Réservations</div>
             </div>
             <div class="contactItems">
-                <label for = 'prenom'>Prénom :</label>
+                <div>Prénom : </div>
+                <label for = 'prenom'></label>
                 <input type='text' id='prenom' name='user_first_name'>
             </div>
             <div class="contactItems">
-                <label for ='nom'>Nom :</label>
+                <div>Nom : </div>
+                <label for ='nom'></label>
                 <input type = 'text' id = 'nom' name = 'user_last_name'>
             </div>
             <div class="contactItems">
-                <label for='e-mail'>e-mail :</label>
+                <div>e-mail : </div>
+                <label for='e-mail'></label>
                 <input type = 'email' id='e-mail' name='user_mail'>
             </div>
             <div class="contactItems">
-                <label for='telephone'>Téléphone :</label>
+                <div>Téléphone : </div>
+                <label for='telephone'></label>
                 <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
             </div>
             <!-- This is just a test
@@ -279,7 +286,8 @@
             </div>
             -->
             <div>
-                <label for='message'>Message :</label>
+                <div>Message : </div>
+                <label for='message'></label>
                 <textarea id='message' name='user_message'></textarea>
             </div>
             <div  class='button'>

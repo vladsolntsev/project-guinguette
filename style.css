@@ -6,6 +6,11 @@ html, body {
 
 #body{
     background-color: beige;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 1.6em;
 }
 
 /* Navigation bar css */
@@ -22,11 +27,12 @@ nav ul {
 }
 nav {
     background-color: black;
-    height: 44px;
+    height: 100px;
 }
 li {
-    padding-top: 10px;
-    font-size: 20px;
+    padding-top: 31px;
+    font-size: 33px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -62,6 +68,17 @@ li {
 }
 /* End navigation bar */
 
+/* Main picture section */
+
+video {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#spotName h1 {
+    margin-bottom: 10%;
+}
+
 /* Programmation Section CSS */
 
 #programmation {
@@ -96,11 +113,13 @@ li {
 /* End Programmation Section*/
 h2 {
     text-align: center;
+    font-size: 3.7em;
 }
 
 #landingPicture {
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 #bienvenue {
@@ -108,6 +127,7 @@ h2 {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    margin-top:6%;
 }
 
 .spotName {
@@ -125,6 +145,8 @@ h2 {
 
 h1 {
     color: white;
+    font-weight: bolder;
+    font-size: 5em;
 }
 
 #mainPageLogo {
@@ -133,14 +155,17 @@ h1 {
 }
 
 #mainLogo {
-    height: auto;
-    width: 50%;
-    margin-left: 2050px;
+    margin-left: 2500px;
     transition: margin-left 2s;
 }
 
 #delay:hover {
     font-size: 36px;
+}
+
+#imageRestauration {
+    width: 80%;
+    margin-left: 10%;
 }
 
 #histoire {
@@ -166,6 +191,7 @@ h1 {
 #form {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #contactPresentation{
@@ -173,15 +199,24 @@ h1 {
 }
 
 #demandeInformations {
- display: inline-block;
+    display: inline-block;
+    background-color: blue;
+    color: beige;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 #reservations {
     display: inline-block;
+    color: beige;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-form {
-    text-align: center;
+contactItems {
+display: flex;
+margin-left: 43%;
 }
 
 /* End of contact section */
