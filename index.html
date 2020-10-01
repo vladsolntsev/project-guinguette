@@ -242,27 +242,29 @@
 <!-- Contact section -->
     <section id='formulaire'>
         <h2>Contact / Réservations</h2>
-        <p>Envie de réserver vos billets dès aujourd'hui ? Besoin d'informations ?</p>
-        <p>Nous vous répondrons au plus vite !</p>
-        <p>Réservations possibles jusqu'à 24h avant l\'évènement</p>
+        <div id="contactPresentation">
+            <p>Envie de réserver vos billets dès aujourd'hui ? Besoin d'informations ?</p>
+            <p>Nous vous répondrons au plus vite !</p>
+            <p>Réservations possibles jusqu'à 24h avant l\'évènement</p>
+        </div>
         <form>
-            <div>
+            <div class="contactItems">
                 <div id='demandeInformations'>Demande d'infomations</div>
                 <div id='reservations'>Réservations</div>
             </div>
-            <div>
+            <div class="contactItems">
                 <label for = 'prenom'>Prénom :</label>
                 <input type='text' id='prenom' name='user_first_name'>
             </div>
-            <div>
+            <div class="contactItems">
                 <label for ='nom'>Nom :</label>
                 <input type = 'text' id = 'nom' name = 'user_last_name'>
             </div>
-            <div>
+            <div class="contactItems">
                 <label for='e-mail'>e-mail :</label>
                 <input type = 'email' id='e-mail' name='user_mail'>
             </div>
-            <div>
+            <div class="contactItems">
                 <label for='telephone'>Téléphone :</label>
                 <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
             </div>

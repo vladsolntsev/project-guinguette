@@ -3,7 +3,8 @@ html, body {
     height:100%;
     margin: 0;
 }
-.body{
+
+#body{
     background-color: beige;
 }
 
@@ -125,7 +126,6 @@ h2 {
 h1 {
     color: white;
 }
->>>>>>> Stashed changes
 
 #mainPageLogo {
     display: table-cell;
@@ -157,8 +157,35 @@ h1 {
     margin-right: 10%;
 }
 
+/* Contact section */
 
-/* End Programmation Section*/
+#formulaire {
+    margin-bottom: 10%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactPresentation{
+    text-align: center;
+}
+
+#demandeInformations {
+ display: inline-block;
+}
+
+#reservations {
+    display: inline-block;
+}
+
+form {
+    text-align: center;
+}
+
+/* End of contact section */
+
 
 .footer {
     display: flex;
