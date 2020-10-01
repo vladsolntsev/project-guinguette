@@ -68,16 +68,22 @@ li {
 }
 /* End navigation bar */
 
-/* Main picture section */
 
-video {
+
+/* Video Alric */
+
+#videoChezAlriq{
     width: 80%;
     margin-left: 10%;
 }
 
+/* Main picture section */
+
+
 #spotName h1 {
     margin-bottom: 10%;
 }
+
 
 /* Programmation Section CSS */
 
