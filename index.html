@@ -254,24 +254,24 @@
                 <div id='reservations'>Réservations</div>
             </div>
             <div class="contactItems">
-                <div class="contactTitles">Prénom : </div>
+                <div class="contactTitles" id='firstName'>Prénom : </div>
                 <label for = 'prenom'></label>
-                <input type='text' id='prenom' name='user_first_name'>
+                <input type='text' id='prenom' placeholder = "Alriq" name='user_first_name'>
             </div>
             <div class="contactItems">
                 <div class="contactTitles">Nom : </div>
                 <label for ='nom'></label>
-                <input type = 'text' id = 'nom' name = 'user_last_name'>
+                <input type = 'text' id = 'nom' placeholder = 'Guinguette' name = 'user_last_name'>
             </div>
             <div class="contactItems">
                 <div class="contactTitles">e-mail : </div>
                 <label for='e-mail'></label>
-                <input type = 'email' id='e-mail' name='user_mail'>
+                <input type = 'email' id='e-mail' placeholder = 'alriq@guinguette.fr' name='user_mail'>
             </div>
             <div class="contactItems">
                 <div class="contactTitles">Téléphone : </div>
                 <label for='telephone'></label>
-                <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
+                <input type='tel' id='telephone' placeholder = '0102030405' name='user_phone' pattern='[0-9]{10}'>
             </div>
             <!-- This is just a test
             <div>
@@ -285,7 +285,7 @@
             <div>
                 <div class="contactTitles">Message : </div>
                 <label for='message'></label>
-                <textarea id='message' name='user_message' rows="10"></textarea>
+                <textarea id='message' placeholder = 'Mon super message' name='user_message' rows="10"></textarea>
             </div>
             <div  class='button'>
                 <button  type='submit'>Envoyer</button>
