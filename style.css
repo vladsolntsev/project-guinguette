@@ -17,6 +17,8 @@ p {
 #menu-burger a {
     text-decoration: none;
     color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -27,46 +29,14 @@ nav ul {
 }
 nav {
     background-color: black;
-    height: 100px;
+    height: 80px;
 }
 li {
-    padding-top: 31px;
-    font-size: 33px;
+    padding-top: 25px;
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-    nav {
-        display: none;
-        height: 170px;
-    }
-    ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    li {
-        padding-top: 16px;
-    }
-    .burger-menu {
-        cursor: pointer;
-        font-size: 26px;
-        margin: 10px;
-    }
-}
-@media screen and (min-width: 601px){
-    .burger-menu {
-        display: none;
-    }
-}
-.burger-menu {
-    cursor: pointer;
-    font-size: 26px;
-    margin: 10px;
-}
-.display-block {
-    display: block;
-}
-/* End navigation bar */
+
 
 
 
@@ -150,19 +120,21 @@ h2 {
 /* Programmation Section CSS */
 
 h1 {
-    color: white;
+    color: black;
     font-weight: bolder;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 #mainPageLogo {
     display: table-cell;
     text-align: center;
+    padding-left: 556px;
 }
 
 #mainLogo {
-    margin-left: 2500px;
+    margin-left: 1000px;
     transition: margin-left 2s;
+    transition-timing-function: cubic-bezier(.63,1.26,.57,-0.07);
 }
 
 #delay:hover {
@@ -250,3 +222,61 @@ button {
     width: 10%;
     height: auto;
 }
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+        height: 170px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    li {
+        padding-top: 16px;
+    }
+    #menu-burger a {
+        font-size: 17px;
+    }
+    #menu-burger {
+        position: absolute;
+        width: 100%;
+        height: 160px;
+    }
+    .burger-menu {
+        cursor: pointer;
+        font-size: 26px;
+        margin: 10px;
+    }
+    #histoirePicture {
+        width: 100%;
+    }
+    h1 {
+        display: none;
+    }
+    #mainLogo {
+        width: 80%;
+        margin-left: 600px;
+        transition: margin-left 2s;
+    }
+    #mainPageLogo {
+        padding-left: 105px;
+    }
+    #landingSection {
+        margin-top: 76px;
+    }
+}
+@media screen and (min-width: 601px){
+    .burger-menu {
+        display: none;
+    }
+}
+.burger-menu {
+    cursor: pointer;
+    font-size: 26px;
+    margin: 10px;
+}
+.display-block {
+    display: block;
+}
+/* End navigation bar */
