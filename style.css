@@ -187,6 +187,28 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
 }
+/* Restauration section */
+
+.container {
+    display: flex;
+    justify-content : center
+}
+
+table {
+    margin: 0 auto
+    border: 2px solid black;
+    width: 60%;
+    font-size: 12pt;
+}
+
+th, td {
+    border: 2 px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "varela round";
+    font-size: 25pt;
+    border-radius: 3px;
+}
 
 /* Contact section */
 
