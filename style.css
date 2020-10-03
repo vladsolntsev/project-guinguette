@@ -222,25 +222,100 @@ h1 {
 }
 /* Restauration section */
 
-.container {
-    display: flex;
-    justify-content : center
+h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 6%;
 }
 
+.restaurationtexte {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    justify-content : center;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: baseline;
+}
+
+.container3 {
+    display: flex;
+    justify-content : center;
+    align-items: flex-end;
+}
+
+
+
+.grayscale img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.grayscale:hover img {
+	-webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform:scale(1.00);
+}
+
+
+
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zoom:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.morph img {
+    width: 300px;
+    height: 300px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+   
+  .morph:hover img {
+    width: 300px; /* on affiche l'image au carré */
+    height: 300px;
+    border-radius: 80%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+  }
+
 table {
-    margin: 0 auto
-    border: 2px solid black;
-    width: 60%;
+    margin-top: 100px;
+    /*margin-right: 20%;
+    margin-left: 20%;*/
+    border: 1px solid #C5404D;
+    border-radius: 8px;
+    /*width: 50%;*/
     font-size: 12pt;
+    empty-cells: hide;
 }
 
 th, td {
-    border: 2 px solid black;
-    border-collapse: collapse;
+    border: 1px solid #C5404D;
     text-align: center;
     font-family: "varela round", sans-serif;
-    font-size: 25pt;
-    border-radius: 3px;
+    font-size: 20pt;
+    border-radius: 8px;
 }
 
 /* Contact section */
