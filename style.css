@@ -10,7 +10,7 @@ html, body {
 }
 
 p {
-    font-size: 1.6em;
+    font-size: 1.1em;
 }
 
 /* Navigation bar css */
@@ -31,7 +31,7 @@ nav {
 }
 li {
     padding-top: 31px;
-    font-size: 33px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -125,11 +125,14 @@ li {
     height: 15em;
     width: 15em
 }
+.eventTitle {
+    font-size:1.5em;
+}
 
 /* End Programmation Section*/
 h2 {
     text-align: center;
-    font-size: 3.7em;
+    font-size: 2.3em;
 }
 
 #landingPicture {
