@@ -255,8 +255,6 @@ h3 {
     flex-direction: column;
 }
 
-
-
 .grayscale img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -268,8 +266,6 @@ h3 {
     filter: grayscale(0);
     transform:scale(1.00);
 }
-
-
 
 .zoom img {
 	-webkit-transform: scale(1);
@@ -300,7 +296,7 @@ h3 {
     transform: rotate(360deg);
 }
 
-/*table {
+table {
     margin-top: 100px;
     margin-right: 20%;
     margin-left: 20%;
@@ -316,7 +312,7 @@ th, td {
     font-family: "varela round", sans-serif;
     font-size: 20pt;
     border-radius: 8px;
-}*/
+}
 
 .tftable {
     font-size:20px;
