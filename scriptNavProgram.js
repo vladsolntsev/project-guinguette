@@ -20,4 +20,3 @@ for (let i = 0; i < buttons.length; i++) {
   })
 }
 /* End JS Programmation Section */
-
