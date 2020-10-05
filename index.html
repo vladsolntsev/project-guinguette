@@ -29,15 +29,9 @@
         </ul>
     </nav>
 <!-- main picture section -->
-<div id="mainPageLogo">
-    <img id="mainLogo"
-         src="https://www.laguinguettechezalriq.com/wp-content/uploads/2019/04/logo-chez-alriq-guinguette-bordeaux-ok.png"
-         alt="Logo de la Guinguette, chez Alriq">
-</div>
-
     <div id='landingSection'>
         <video autoplay muted loop id="videoChezAlriq">
-            <source src="videos/chezAlriq.mp4" type="video/mp4">
+            <source src="videos/Chez_Alriq_Final.mp4" type="video/mp4">
         </video>
         <!-- Test avec un image
         <img id="landingPicture"
@@ -50,10 +44,13 @@
                 <h1>Bienvenue chez Alriq</h1>
             </div>
 
-            <!-- logo chez alriq -->
+            <div id="mainPageLogo">
+                <img id="mainLogo"
+                     src="https://www.laguinguettechezalriq.com/wp-content/uploads/2019/04/logo-chez-alriq-guinguette-bordeaux-ok.png"
+                     alt="Logo de la Guinguette, chez Alriq">
+            </div>
         </div>
 
-        <div id="contactSticky"><a href="#contact">Réserver</a></div>
     </div>
    
 <!-- End of main picture section -->
@@ -65,7 +62,7 @@
         </div>
         <div id="programmation">
             <div id="event1">
-                <p>Concert de Neffex</p>
+                <p class="eventTitle">Concert de Neffex</p>
                 <img id="event1photo" src="images/neffex.jpg" alt="Photo du premier évènement">
                 <div class="dateEvent">
                     <p>Le 20 octobre 2020</p>
@@ -83,7 +80,7 @@
                 </div>
             </div>
             <div id="event2">
-                <p>Concert de Rim'k</p>
+                <p class="eventTitle">Concert de Rim'k</p>
                 <img id="event2photo" src="images/rimk.jpg" alt="Photo du deuxième évènement">
                 <div class="dateEvent">
                     <p>Le 25 octobre 2020</p>
@@ -99,7 +96,7 @@
                 </div>
             </div>
             <div id="event3">
-                <p>Concert de Shaka Ponk</p>
+                <p class="eventTitle">Concert de Shaka Ponk</p>
                 <img id="event3photo" src="images/shacaponk.jpg" alt="Photo du troisième évènement">
                 <div class="dateEvent">
                     <p>Le 15 novembre 2020</p>
@@ -118,92 +115,287 @@
 <!-- fin de la section programmation -->
 
 <!--start menu section-->
-<section>
-    <h2 id="restauration">La restauration</h2>
-    <article><img id="imageRestauration" src="https://i.ibb.co/Sxqcv1x/montage.jpg" alt="montage"></article>
-    <table>
+
+    <h2 id="restauration">Restauration</h2>
+    
+    
+    <br>
+    <section class="container2">
+        <article><img src="images/biere5.jpg" alt="biere1" width="250"></article>
+        <article><img src="images/frites.jpg" alt="biere2" width="250"></article>
+        <article><img src="images/hamburger.jpg" alt="biere3" width="250"></article>
+        <article><img src="images/jambon.jpg" alt="biere4" width="250"></article>
+    </section>
+    <section class="container2">
+        <article><img src="images/mojito.jpg" alt="biere1" width="250"></article>
+        <article class="grayscale"><img src="images/restauration1.jpg" alt="biere2" width="250"></article>
+        <article class="grayscale"><img src="images/restauration2.jpg" alt="biere3" width="250"></article>
+        <article><img src="images/pizza5.jpg" alt="biere4" width="250"></article>
+    </section>
+    <section class="container2">
+        <article><img src="images/salade.jpg" alt="biere1" width="250"></article>
+        <article class="grayscale"><img src="images/restauration3.jpg" alt="biere2" width="250"></article>
+        <article class="grayscale"><img src="images/restauration4.jpg" alt="biere3" width="250"></article>
+        <article><img src="images/tapas1.jpg" alt="biere4" width="250"></article>
+    </section>
+    <section class="container2">
+        <article><img src="images/vin5.jpg" alt="biere1" width="250"></article>
+        <article><img src="images/moules.jpg" alt="biere2" width="250"></article>
+        <article><img src="images/pizza6.jpg" alt="biere3" width="250"></article>
+        <article><img src="images/tapas2.jpg" alt="biere4" width="250"></article>
+    </section>
+    <h3>les menus</h3>
+    <div class="restaurationtexte">
+        <p>Les menus: entrée, plats, desserts à la cantine - resto self...</p>
+        <p>Les assiettes de cochonnailles à la cabane...</p>
+        <p>Les pizzas maison à la roulotte...</p>
+        </div>
+    <section class="container3">
+        <table class="tftable">
+            <thead>
+            <tr>
+             <th>Plats</th>
+             <th>Prix</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Moules marinières</th>
+                <td>10€</td>
+              </tr>
+              <tr>
+                <td>assiette de cochonnailles</th>
+                <td>16€</td>
+              </tr>
+              <tr>
+                <td>assiette de brebis et confiture de cerise noire</th>
+                <td>8€</td>
+              </tr>
+              <tr>
+                <td>Poulet frites</th>
+                <td>11€</td>
+              </tr>
+              <td>Hamburger frites</td>
+              <td>12€</td>
+              <tr>
+                <td>Pizzas maison</th>
+                <td>9€</td>
+              </tr>
+              <tr>
+                <td>Tapas</td>
+                <td>12€</td>
+              </tr>
+            </tbody> 
+         </table>
+        </section>
+        <h3>Pizzas maison</h3>
+        <div class="restaurationtexte">
+        <p>Notre farine provient d'une <b>ferme biologique dans le Lot-et-Garonne (Nouvelle-Aquitaine) qui cultive ses propres
+             céréales</b> et qui a fait le choix de se tourner vers la culture de variétés anciennes. Notre farine semi-complète 
+             est moulue à la meule de pierre et elle est riche en fibres, en éléments nutritifs et en sels minéraux. <b>Une panification 
+             au levain naturel</b>b> permet d’amorcer la dégradation du gluten et ainsi de faciliter encore plus sa digestion.</p>
+        </div>
+        <section class="container">
+        <article class="morph"><img src="images/pizza1.jpg" alt="pizza1" width="250"></article>
+        <article><img src="images/pizza2.jpg" alt="pizza2" width="250"></article>
+        <article><img src="images/pizza3.jpg" alt="pizza3" width="250"></article>
+        <article><img src="images/pizza4.jpg" alt="pizza4" width="250"></article>
+        </section> 
+    <h3>Les boissons</h3>
+    <div class="restaurationtexte">
+        <p>Les boissons: Cabane et Cantine</p>
+        <p>Bières, Vins et Sodas: Cabanon </p>
+        </div>
+    <section class="container3">
+      <table class="tftable">
         <thead>
-          <tr>
-            <th><img src="https://i.ibb.co/RBjKm03/logo-chez-alriq-guinguette-bordeaux-ok.png" alt="logo-chez-alriq-guinguette-bordeaux-ok" width="200"></th>
-            <th></th>
-          </tr>
-          <tr>
-            <th>Plats</th>
-            <th>Prix</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Moules marinnières</th>
-            <td>10€</td>
-          </tr>
-          <tr>
-            <th>Poulet frites</th>
-            <td>12€</td>
-          </tr>
-          <tr>
-            <th>Pizzas maison</th>
-            <td>9€</td>
-          </tr>
-          <tr>
-            <th>Tapas</th>
-            <td>12€</td>
-          </tr>
-        </tbody> 
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Boissons</th>
-            <th>Prix</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Bières 25cl</th>
-            <td>2€</td>
-          </tr>
-          <tr>
-            <th>Verre vin rouge</th>
-            <td>3€</td>
-          </tr>
-          <tr>
-            <th>Verre vin rosé</th>
-            <td>3€</td>
-          </tr>
-          <tr>
-            <th>Cocktail mojito</th>
-            <td>4€</td>
-          </tr>
-        </tbody> 
-      </table>
-    <ul>
-      <li>
-          <h3>Bières locales bio</h3>
-        <article><img src="https://i.ibb.co/HrFTYrF/biere1.jpg" alt="biere1" width="300"></article>
-        <article><img src="https://i.ibb.co/GxWJZD5/biere2.jpg" alt="biere2" width="300"></article>
-        <article><img src="https://i.ibb.co/j8KGZqM/biere3.jpg" alt="biere3" width="300"></article>
-        <article><img src="https://i.ibb.co/VwMnKSm/biere4.jpg" alt="biere4" width="300"></article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus euismod lacinia. Quisque aliquam fermentum magna, eget tristique massa auctor sit amet. </p>
-       </li>
-       <li>
-          <h3>Vins producteurs locaux</h3>
-         <article><img src="https://i.ibb.co/cCmMMvX/vin1.jpg" alt="vin1" width="300"></article>
-         <article><img src="https://i.ibb.co/5FxF4Tn/vins2.jpg" alt="vins2" width="300"></article>
-         <article><img src="https://i.ibb.co/mqq97bp/vins3.jpg" alt="vins3" width="300"></article>
-         <article><img src="https://i.ibb.co/v35mGHG/vins4.jpg" alt="vins4" width="300"></article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus euismod lacinia. Quisque aliquam fermentum magna, eget tristique massa auctor sit amet.</p>
-       </li>
-       <li>
-          <h3>Pizzas maison</h3>
-          <article><img src="https://i.ibb.co/BCzTHkk/pizza1.jpg" alt="pizza1" width="300"></article>
-          <article><img src="https://i.ibb.co/wSthp5s/pizza2.jpg" alt="pizza2" width="300"></article>
-          <article><img src="https://i.ibb.co/8m6GCgZ/pizza3.jpg" alt="pizza3" width="300"></article>
-          <article><img src="https://i.ibb.co/289LcHn/pizza4.jpg" alt="pizza4" width="300"></article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus euismod lacinia. Quisque aliquam fermentum magna, eget tristique massa auctor sit amet.</p>
-       </li>
-    </ul>
-  </section> 
+            <tr>
+              <th>Les Bières et Apéritifs</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bière BIO locale de la Brasserie de la lune</td>
+              <td>3,50 € (25cl) / 7,00 € (50cl)</td>
+            </tr>
+            <tr>
+                <td>Bière artisanale et locale de la Maison PIP </td>
+                <td>3,50 € (25cl) / 7,00 € (50cl)</td>
+            </tr>
+            <tr>
+              <td>Le Lillet rouge ou blanc (Vin cuit de Bordeaux)</td>
+              <td>3,50 €</td>
+            </tr>
+            <tr>
+                <td>Ricard</td>
+                <td>2,50 €</td>
+              </tr> 
+            <tr>
+              <td>Punch Planteur de la Guinguette</td>
+              <td>5,00 € (verre) / 20,00 € (pichet)</td>
+            </tr> 
+            <tr>
+                <td>Alcools : Whisky, Gin, Vodka</td>
+                <td>5,00 €</td>
+              </tr> 
+              <tr>
+                <td>Supplément Jus ou Soda</td>
+                <td>1,00 €</td>
+              </tr> 
+              <tr>
+                <td>Cocktails : Caipirinha, Mojito, margarita</td>
+                <td>8,00 €</td>
+              </tr> 
+              <tr>
+                <td>Ti Punch</td>
+                <td>7,00 €</td>
+              </tr> 
+          </tbody> 
+        </table>
+        
+        <table class="tftable">
+            <thead>
+            <tr>
+              <th>Soft</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Soda classique (33cl) Coca, Coca Light, Orangina, Perrier, Schweppes</td>
+              <td>3,00 €</td>
+            </tr>
+            <tr>
+              <td>Jus de Fruits BIO "Meneau" (25 cl) : orange, Ananas, Pomme, Abricot, Tomate</td>
+              <td>4,00€</td>
+            </tr>
+            <tr>
+                <td>Smoothie BIO "Meneau"(25cl) : selon Arrivage</td>
+                <td>4,50€</td>
+            </tr>
+            <tr>
+                <td>Boisson Rafaîchissante Bio "meneau" (25cl): Citronnade, Thé Vert</td>
+                <td>4,00€</td>
+            </tr>
+            <tr>
+              <td>Bouteille source Abatilles (plate ou gazeuse)</td>
+               <td>2,00 € (50cl) / 3,00 € (1litre)</td>
+            </tr>
+          </tbody> 
+        </table>
+        <table class="tftable">
+            <thead>
+            <tr>
+              <th>Les Boissons chaudes</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Café</td>
+              <td>1,50 €</td>
+            </tr>
+            <tr>
+              <td>Grand café</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+                <td>Thé ou infusion Bio</td>
+                <td>2,50€</td>
+            </tr>
+          </tbody> 
+        </table>
+        <table class="tftable">
+            <thead>
+            <tr>
+              <th>Les digestifs</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rhum vieux, Armagnac, Poire, cognac</td>
+              <td>8,00 €</td>
+            </tr>
+            <tr>
+              <td>Dijo supérieur</td>
+              <td>10,00€</td>
+            </tr>
+          </tbody> 
+        </table>
+        <table class="tftable">
+            <thead>
+            <tr>
+              <th>Les Vins Rouges-Rosés-Blancs</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>La Cuvée d'Alriq Rouges  (bordeaux: producteurs locaux)</td>
+              <td>verre / bouteille     3,00 € / 16,00 €</td>
+            </tr>
+            <tr>
+                <td>La Cuvée d'Alriq Rosés  (bordeaux: producteurs locaux)</td>
+                <td>verre / bouteille     3,00 € / 15,00 €</td>
+              </tr>
+              <tr>
+                <td>La Cuvée d'Alriq Blancs  (bordeaux: producteurs locaux)</td>
+                <td>verre / bouteille     3,00 € / 15,00 €</td>
+              </tr>
+          </tbody> 
+        </table>
+        </section>
+      
+    
+       <h3>Bières locales bio</h3>
+       <div class="restaurationtexte">
+       <p><b>Notre top 3 des brasseries girondines:</b>
+        Si le marché de la bière artisanale est jeune, il est également en essor constant, et dévoile régulièrement des petits nouveaux 
+        sur le marché. <b>Outre la brasserie de Darwin, la brasserie de la Lune, et ses bières 100 % bio </b>produites à base de céréales bio 
+        cultivés et maltés dans le Sud Ouest, qui s’engage également grâce à une salle de brassage sobre, une installation géothermique, 
+        une électricité 100 % renouvelable ENERCOOP… <b>trois autres brasseries sont pour nous un véritable coup de coeur.</b>
+        <b>La Brasserie Azimut</b>, fondée par deux compères passionnés, Vincent et Paul, <B>basés du côté de Bordeaux Lac.</B> 
+        Leur crédo : explorer sans cesse de nouvelles saveurs, d’originales associations, dans des bouteilles en verre ou des canettes
+        format “slim” aux étiquettes recherchées. A retrouver dans la plupart des lieux cool de Bordeaux !
+        <b>La Brasserie Effet Papillon</b>, menée avec brio par Josselin et Mathilde, <b>installée à Mérignac.</b> Encore une aventure de passionnés,
+        la brasserie propose beaucoup de bières avec <b>vieillissement en barrique</b>, qui permet des saveurs inédites, avec un côté tanique,
+        ou de l’acidité dans certaines bières. Leurs pépites sont elles aussi disponibles dans les bars et caves bordelaises, et à 
+        emporter directement à leur brasserie.
+        <b>La Brasserie Terko</b> est plus petite que les deux autres, mais tout aussi prometteuse. Aux manettes, Matthieu propose<b> un large 
+        choix de bières IPA (la star des bières artisanales),</b> ambrée fumée ou encore Pale Ale. A découvrir d’urgence !</p>
+        
+         </div>
+        <section class="container">
+        <article class="morph"><img src="images/biere1.jpg" alt="biere1" width="250"></article>
+        <article><img src="images/biere2.jpg" alt="biere2" width="250"></article>
+        <article><img src="images/biere3.jpg" alt="biere3" width="250"></article>
+        <article><img src="images/biere4.jpg" alt="biere4" width="250"></article>
+        </section>
+        <br>
+
+
+        
+
+        <h3>Vins producteurs locaux</h3>
+        <div class="restaurationtexte">
+        <p>le circuit court est un modèle de <b>consommation responsable inscrit dans la tendance du "manger mieux"</b> et dans la volonté 
+            de réduire notre empreinte carbone. C'est un mouvement que l'on retrouve en force dans l'agriculture pour les fruits et
+             légumes ou encore les fromages. <B>Dans le vin, il est également très lié aux méthodes de l'agriculture biologique</B>, 
+             à l'agriculture raisonnée ou encore aux réseaux de consommation locale. Le point commun ? 
+             Une volonté de prendre soin de la nature et de ceux qui la subliment par leur travail.</p>
+        </div>
+        <section class="container">
+         <article class="morph"><img src="images/vin1.jpg" alt="vin1" width="250"></article>
+         <article><img src="images/vins2.jpg" alt="vins2" width="250"></article>
+         <article><img src="images/vins3.jpg" alt="vins3" width="250"></article>
+         <article><img src="images/vins4.jpg" alt="vins4" width="250"></article>
+        </section>
+         
+       
+    
+        
   
 <!--end menu section-->
 
@@ -216,38 +408,38 @@
     </div>
     <div id='notreHistoire'>
         <p class="date">1990</p>
-        <p>Rose et Alriq repèrent, en bord de Garonne,
+        <p>Rose et Alriq repèrent,<b> en bord de Garonne,
             un terrain en jachère enclavé dans une zone
-            d’activités… inactive. La rive droite est en
+            d’activités… inactive</b>. La rive droite est en
             pleine transformation. Les quais de Queyries
             resteront en « transition » une dizaine d’années,
             parsemés de terrains vagues, d’habitations rescapées,
             de hangars vides, traversés par une voie ferrée cheminant
-            jusqu’aux Grands Moulins de Paris. Un quartier populaire en transition.
+            jusqu’aux Grands Moulins de Paris.<b> Un quartier populaire en transition.</b>
             Le port autonome accorde l’autorisation d’occuper le terrain,<br>
-            la Guinguette chez Alriq est née ! Oh, pas du jour au lendemain,
+            <b>la Guinguette chez Alriq est née !</b> Oh, pas du jour au lendemain,
             non. Fruit de l’imagination fertile, baroque et engagée d’Alriq,
-            de cette friche allait émerger et se dessiner au fil du temps un
-            vrai jardin des délices. Le projet est de remettre au goût du jour
-            l’esprit guinguette, véritable symbole du folklore français et de
+            de cette friche allait émerger et se dessiner au fil du temps <b>un
+            vrai jardin des délices.</b> Le projet est de <b>remettre au goût du jour
+                l’esprit guinguette, véritable symbole du folklore français</b> et de
             créer une sorte de cabaret populaire où tout le monde pourrait venir
             danser et se restaurer. A l’abri de la frénésie urbaine, Alriq à toujours
-            su, durant ces 23 années, garantir des moments de rencontres, d’échanges
-            et de générosité autour d’artistes d’ici et d’ailleurs.
+            su, durant ces 23 années, garantir des <b>moments de rencontres, d’échanges
+             et de générosité</b> autour d’artistes d’ici et d’ailleurs.
         </p>
         <p class="date">2014</p>
         <p>
             C’est dans l’esprit de cet héritage que le flambeau est repris par une petite
             équipe de mordus, dont un autre Alriq, mais au féminin cette fois. Le contexte
-            est tout autre. La Guinguette, aujourd’hui au cœur du parc des Angéliques, participe
-            à l’essor du quartier dans sa dimension culturelle et sociale. Elle accueille un
-            public toujours plus nombreux, offrant une aire de mixité sociale intergénérationnelle,
+            est tout autre. <b>La Guinguette, aujourd’hui au cœur du parc des Angéliques, participe
+            à l’essor du quartier dans sa dimension culturelle et sociale.</b> Elle accueille un
+            public toujours plus nombreux, offrant <b>une aire de mixité sociale intergénérationnelle,
             ouverte à tous sans distinctions, un espace familial, convivial et participatif qui
-            vibre au rythme des musiques du monde. Car la musique reste l’âme de la Guinguette.
+            vibre au rythme des musiques du monde.</b> Car la musique reste l’âme de la Guinguette.
             Éclectique, festive, vibratoire ou poétique, la musique nous invite chaque soir à un
             voyage bercé d’émotions et d’espoir.<br>
-            Résolument tourné vers l’optimisme, la Guinguette chez Alriq est un lieu qui cultive
-            l’imaginaire et l’impertinence avec passion!
+            Résolument tourné vers l’optimisme, la Guinguette chez Alriq est <b>un lieu qui cultive
+            l’imaginaire et l’impertinence avec passion !</b>
         </p>
     </div>
 <!-- End of history section -->
@@ -265,24 +457,24 @@
                 <div id='reservations'>Réservations</div>
             </div>
             <div class="contactItems">
-                <div class="contactTitles">Prénom : </div>
+                <div class="contactTitles" id='firstName'>Prénom : </div>
                 <label for = 'prenom'></label>
-                <input type='text' id='prenom' name='user_first_name'>
+                <input type='text' id='prenom' placeholder = "Alriq" name='user_first_name'>
             </div>
             <div class="contactItems">
                 <div class="contactTitles">Nom : </div>
                 <label for ='nom'></label>
-                <input type = 'text' id = 'nom' name = 'user_last_name'>
+                <input type = 'text' id = 'nom' placeholder = 'Guinguette' name = 'user_last_name'>
             </div>
             <div class="contactItems">
                 <div class="contactTitles">e-mail : </div>
                 <label for='e-mail'></label>
-                <input type = 'email' id='e-mail' name='user_mail'>
+                <input type = 'email' id='e-mail' placeholder = 'alriq@guinguette.fr' name='user_mail'>
             </div>
             <div class="contactItems">
                 <div class="contactTitles">Téléphone : </div>
                 <label for='telephone'></label>
-                <input type='tel' id='telephone' name='user_phone' pattern='[0-9]{10}'>
+                <input type='tel' id='telephone' placeholder = '0102030405' name='user_phone' pattern='[0-9]{10}'>
             </div>
             <!-- This is just a test
             <div>
@@ -296,7 +488,7 @@
             <div>
                 <div class="contactTitles">Message : </div>
                 <label for='message'></label>
-                <textarea id='message' name='user_message' rows="10"></textarea>
+                <textarea id='message' placeholder = 'Mon super message' name='user_message' rows="10"></textarea>
             </div>
             <div  class='button'>
                 <button  type='submit'>Envoyer</button>
@@ -305,46 +497,53 @@
     </section>
 <!-- End of contact section -->
 <!-- footer section -->
-    <div class="footer">
-        <div class="footerItems">
-            <a href="#programmation" alt="Lien vers la programmation">
-                Programmation
-            </a>
+<footer>
+    <div class="footerItemsNames">
+        <div class="smallFooter">
+            <div>
+                <a href="#programmation" alt="Lien vers la programmation" class="footerMenu">
+                    Programmation
+                </a>
+            </div>
+            <div>
+                <a href="#restauration" alt="Lien vers la restauration" class="footerMenu">
+                    Restauration
+                </a>
+            </div>
         </div>
-        <div class="footerItems">
-            <a href="#restauration" alt="Lien vers la restauration">
-                Restauration
-            </a>
-        </div>
-        <div class="footerItems">
-            <a href="#histoire" alt="Lien vers l\'histoire">
-                Histoire
-            </a>
-        </div>
-        <div class="footerItems">
-            <a href="#contact" alt="Lien vers le contact">
-                Contact
-            </a>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="icon">
-            <a href="" alt="Lien vers Facebook">
-                <img src="icons/facebook.svg" class="icon" alt="Icone Facebook">
-            </a>
-        </div>
-        <div class="icon">
-            <a href="" alt="Lien vers instagram">
-                <img src="icons/instagram.svg" class="icon" alt="Icone Instagram">
-            </a>
-        </div>
-        <div class="icon">
-            <a href="" alt="Lien vers Youtube">
-                <img src="icons/youtube.svg" class="icon" alt="Icone youtube">
-            </a>
+        <div class="smallFooter">
+            <div>
+                <a href="#histoire" alt="Lien vers l\'histoire" class="footerMenu">
+                    Histoire
+                </a>
+            </div>
+            <div>
+                <a href="#contact" alt="Lien vers le contact" class="footerMenu">
+                    Contact
+                </a>
+            </div>
         </div>
     </div>
-
+    <div class="footerItemsIcons">
+        <div id="iconsContainer"></div>
+            <div class="icon">
+                <a href="" alt="Lien vers Facebook">
+                    <img src="icons/facebook.svg" class="icon" alt="Icone Facebook">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="" alt="Lien vers instagram">
+                    <img src="icons/instagram.svg" class="icon" alt="Icone Instagram">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="" alt="Lien vers Youtube">
+                    <img src="icons/youtube.svg" class="icon" alt="Icone youtube">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- End of footer section-->
 
 <!-- End  of programmation section -->
