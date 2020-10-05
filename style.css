@@ -10,7 +10,9 @@ html, body {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 200%;
 }
 
 /* Navigation bar css */
@@ -29,9 +31,10 @@ nav {
     background-color: black;
     height: 100px;
 }
+
 li {
     padding-top: 31px;
-    font-size: 25px;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -412,7 +415,7 @@ textarea {
 }
 
 .contactTitles {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
