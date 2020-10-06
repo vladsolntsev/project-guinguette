@@ -55,9 +55,14 @@ li {
         font-size: 26px;
         margin: 10px;
     }
+    .contactSubject {
+        margin:0;
+    }
+
     form {
         margin-left: 0;
     }
+
     input {
         width: 70%;
     }
@@ -81,6 +86,10 @@ li {
         display: none;
     }
 
+    #gMaps iframe {
+    height: 200px;
+    }
+
     .smallFooter {
         display: inline-block;
     }
@@ -93,10 +102,20 @@ li {
     .burger-menu {
         display: none;
     }
+    .contactSubject {
+        margin-left: 17%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
     form {
         margin-left: 17%;
         margin-top: 4%;
     }
+
     button {
         padding: 0 6em;
     }
@@ -234,8 +253,8 @@ h1 {
 }
 
 #notreHistoire {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: justify;
 }
 /* Restauration section */
@@ -247,8 +266,8 @@ h3 {
 }
 
 .restaurationtexte {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 6%;
+    margin-right: 6%;
     text-align: center;
 }
 
@@ -453,6 +472,13 @@ button {
     margin-top: 2em;
     background-color: #C5404D;
 }
+
+
+#gMaps {
+    text-align: center;
+    margin-top: 9%;
+}
+
 
 /* End of contact section */
 
