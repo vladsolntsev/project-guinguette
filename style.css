@@ -67,6 +67,20 @@ li {
     button {
         padding: 0 20%;
     }
+
+    #histoire {
+        text-align: center;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url('https://i0.wp.com/www.visiter-bordeaux.eu/wp-content/uploads/2019/06/11254157_833642916718059_3292309153825878100_n.jpg?fit=960%2C640&ssl=1');
+        width: 100%;
+        height: 50%;
+    }
+
+    #histoirePicture {
+        display: none;
+    }
+
     .smallFooter {
         display: inline-block;
     }
@@ -80,7 +94,7 @@ li {
         display: none;
     }
     form {
-        margin-left: 36%;
+        margin-left: 17%;
         margin-top: 4%;
     }
     button {
@@ -88,6 +102,10 @@ li {
     }
     .footerMenu {
         font-size: 1.6em;
+    }
+
+    .smallFooter {
+        display: contents;
     }
 }
 .burger-menu {
@@ -191,7 +209,6 @@ h1 {
 }
 
 #mainPageLogo {
-    display: table-cell;
     text-align: center;
 }
 
@@ -209,9 +226,7 @@ h1 {
     margin-left: 10%;
 }
 
-#histoire {
-    text-align: center;
-}
+
 
 .date {
     font-weight: bold;
@@ -364,7 +379,7 @@ th, td {
     margin-bottom: 10%;
 }
 
-#contactPresentation{
+.contactMainSentences {
     text-align: center;
 }
 
