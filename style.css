@@ -282,19 +282,7 @@ h3 {
 .grayscale:hover img {
 	-webkit-filter: grayscale(0);
     filter: grayscale(0);
-    transform:scale(1.00);
-}
-
-.zoom img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.zoom:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+    transform:scale(3.1);
 }
 
 .morph img {
@@ -319,9 +307,8 @@ table {
     margin-right: 20%;
     margin-left: 20%;
     border: 1px solid #C5404D;
-    border-radius: 8px;
-    width: 50%;
-    font-size: 12pt;
+    width: 80%;
+    font-size: 20pt;
     empty-cells: hide;
 }
 th, td {
@@ -329,7 +316,7 @@ th, td {
     text-align: center;
     font-family: "varela round", sans-serif;
     font-size: 20pt;
-    border-radius: 8px;
+    
 }
 
 .tftable {
@@ -340,10 +327,11 @@ th, td {
     border-width: 1px;
     border-color: #c5404D;
     border-collapse: collapse;
+   
 }
     
 .tftable th {
-    font-size:16px;
+    font-size:20px;
     color:beige;
     background-color: #c5404D;
     border-width: 1px;
@@ -351,21 +339,24 @@ th, td {
     border-style: solid;
     border-color: #c5404D;
     text-align:left;
+    
 }
 
 
 .tftable tr {
     color:black;
     background-color: beige;
+   
 }
 
 
 .tftable td {
-    font-size:12px;
+    font-size:20px;
     border-width: 1px;
     padding: 8px;
     border-style: solid;
     border-color: #c5404D;
+    
 }
 
 .tftable tr:hover {
