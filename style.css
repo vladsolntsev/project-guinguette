@@ -34,6 +34,9 @@ li {
     font-size: 25px;
     font-weight: bold;
 }
+#menu-burger a:hover {
+    color: #C5404D;
+}
 
 @media screen and (max-width: 600px) {
     nav {
@@ -51,6 +54,9 @@ li {
         cursor: pointer;
         font-size: 26px;
         margin: 10px;
+    }
+    #menu-burger {
+        height: 200px;
     }
     form {
         margin-left: 0;
@@ -70,6 +76,17 @@ li {
 
     .footerMenu {
         font-size: 1.1em;
+    }
+    h1 {
+        display: none;
+    }
+    #mainLogo {
+        margin: 0;
+        transition: 0s;
+        position: static;
+    }
+    #histoirePicture {
+        width: 80%;
     }
 }
 @media screen and (min-width: 601px){
@@ -105,14 +122,6 @@ li {
     width: 80%;
     margin-left: 10%;
 }
-
-/* Main picture section */
-
-
-#spotName h1 {
-    margin-bottom: 10%;
-}
-
 
 /* Programmation Section CSS */
 
@@ -161,20 +170,7 @@ h2 {
     text-align: center;
 }
 
-#bienvenue {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    margin-top:6%;
-}
-
-.spotName {
-    text-align: center;
-}
-
 #contactSticky{
-    position: -webkit-sticky;
     position: sticky;
     top : 2%;
 }
@@ -188,13 +184,13 @@ h1 {
 }
 
 #mainPageLogo {
-    display: table-cell;
     text-align: center;
 }
 
 #mainLogo {
-    margin-left: 2500px;
-    transition: margin-left 2s;
+    margin-left: 1600px;
+    transition: 2.4s;
+    transition-timing-function: cubic-bezier(.85,1.1,.7,-0.56);
 }
 
 #delay:hover {
