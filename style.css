@@ -37,8 +37,107 @@ li {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 #menu-burger a:hover {
     color: #C5404D;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+        height: 170px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    li {
+        padding-top: 16px;
+    }
+    .burger-menu {
+        cursor: pointer;
+        font-size: 26px;
+        margin: 10px;
+    }
+    .contactSubject {
+        margin:0;
+    }
+
+    form {
+        margin-left: 0;
+    }
+
+    input {
+        width: 70%;
+    }
+    textarea{
+        width: 70%;
+    }
+    button {
+        padding: 0 20%;
+    }
+
+    #histoire {
+        text-align: center;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url('https://i0.wp.com/www.visiter-bordeaux.eu/wp-content/uploads/2019/06/11254157_833642916718059_3292309153825878100_n.jpg?fit=960%2C640&ssl=1');
+        width: 100%;
+        height: 50%;
+    }
+
+    #histoirePicture {
+        display: none;
+    }
+
+    #gMaps iframe {
+    height: 200px;
+    }
+
+    .smallFooter {
+        display: inline-block;
+    }
+
+    .footerMenu {
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 601px){
+    .burger-menu {
+        display: none;
+    }
+    .contactSubject {
+        margin-left: 17%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form {
+        margin-left: 17%;
+        margin-top: 4%;
+    }
+
+    button {
+        padding: 0 6em;
+    }
+    .footerMenu {
+        font-size: 1.6em;
+    }
+
+    .smallFooter {
+        display: contents;
+    }
+}
+.burger-menu {
+    cursor: pointer;
+    font-size: 26px;
+    margin: 10px;
+}
+.display-block {
+    display: block;
 }
 
 /* Video Alric */
@@ -135,8 +234,8 @@ h1 {
 }
 
 #notreHistoire {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: justify;
 }
 /* Restauration section */
@@ -148,8 +247,8 @@ h3 {
 }
 
 .restaurationtexte {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 6%;
+    margin-right: 6%;
     text-align: center;
 }
 
@@ -354,6 +453,13 @@ button {
     margin-top: 2em;
     background-color: #C5404D;
 }
+
+
+#gMaps {
+    text-align: center;
+    margin-top: 9%;
+}
+
 
 /* End of contact section */
 

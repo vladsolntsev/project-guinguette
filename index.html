@@ -441,41 +441,52 @@
             <p class="contactMainSentences">Nous vous répondrons au plus vite !</p>
             <p class="contactMainSentences">Réservations possibles jusqu'à 24h avant lévènement</p>
         </div>
-        <form>
-            <div class="contactItems">
-                <div id='demandeInformations'>Demande d'infomations</div>
-                <div id='reservations'>Réservations</div>
+        <div class="contactSubject">
+            <div id='demandeInformations'>Demande d'infomations</div>
+            <div id='reservations'>Réservations</div>
+        </div>
+            <form>
+                <div class="contactItems">
+                    <div class="contactTitles" id='firstName'>Prénom : </div>
+                    <label for = 'prenom'></label>
+                    <input type='text' id='prenom' placeholder = "Alriq" name='user_first_name'>
+                </div>
+                <div class="contactItems">
+                    <div class="contactTitles">Nom : </div>
+                    <label for ='nom'></label>
+                    <input type = 'text' id = 'nom' placeholder = 'Guinguette' name = 'user_last_name'>
+                </div>
+                <div class="contactItems">
+                    <div class="contactTitles">e-mail : </div>
+                    <label for='e-mail'></label>
+                    <input type = 'email' id='e-mail' placeholder = 'alriq@guinguette.fr' name='user_mail'>
+                </div>
+                <div class="contactItems">
+                    <div class="contactTitles">Téléphone : </div>
+                    <label for='telephone'></label>
+                    <input type='tel' id='telephone' placeholder = '0102030405' name='user_phone' pattern='[0-9]{10}'>
+                </div>
+                <!-- This is just a test
+                <div>
+                    <label for = "sujet"></label>
+                    <select id="sujet" name="user_subject">
+                        <option value='Reservations'>Réservations</option>
+                        <option value='Demande d\'informations'>Demande d'informations</option>
+                    </select>
+                </div>
+                -->
+                <div>
+                    <div class="contactTitles">Message : </div>
+                    <label for='message'></label>
+                    <textarea id='message' placeholder = 'Mon super message' name='user_message' rows="10"></textarea>
+                </div>
+                <div  class='button'>
+                    <button  type='submit'>Envoyer</button>
+                </div>
+            </form>
+            <div id="gMaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11314.240310625446!2d-0.5623204!3d44.8508917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9b7bca9c0cf9cad!2sLa%20Guinguette%20Chez%20Alriq!5e0!3m2!1sfr!2sfr!4v1601989360166!5m2!1sfr!2sfr" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            <div class="contactItems">
-                <div class="contactTitles" id='firstName'>Prénom : </div>
-                <label for = 'prenom'></label>
-                <input type='text' id='prenom' placeholder = "Alriq" name='user_first_name'>
-            </div>
-            <div class="contactItems">
-                <div class="contactTitles">Nom : </div>
-                <label for ='nom'></label>
-                <input type = 'text' id = 'nom' placeholder = 'Guinguette' name = 'user_last_name'>
-            </div>
-            <div class="contactItems">
-                <div class="contactTitles">e-mail : </div>
-                <label for='e-mail'></label>
-                <input type = 'email' id='e-mail' placeholder = 'alriq@guinguette.fr' name='user_mail'>
-            </div>
-            <div class="contactItems">
-                <div class="contactTitles">Téléphone : </div>
-                <label for='telephone'></label>
-                <input type='tel' id='telephone' placeholder = '0102030405' name='user_phone' pattern='[0-9]{10}'>
-            </div>
-
-            <div>
-                <div class="contactTitles">Message : </div>
-                <label for='message'></label>
-                <textarea id='message' placeholder = 'Mon super message' name='user_message' rows="10"></textarea>
-            </div>
-            <div  class='button'>
-                <button  type='submit'>Envoyer</button>
-            </div>
-        </form>
     </section>
 <!-- End of contact section -->
 <!-- footer section -->
