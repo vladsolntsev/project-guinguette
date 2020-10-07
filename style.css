@@ -406,7 +406,6 @@ input{
 
 
 textarea {
-    background-color: $cd-txt;
     width: 75%;
     height: 10%;
     font-size: 130%;
