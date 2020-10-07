@@ -60,18 +60,21 @@ li {
 /* Programmation Section CSS */
 
 #programmation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
+    width:80%;
+    height:auto;
+    margin:0 auto;
 }
 
 .eventDescription {
     display: none;
+    align-content: center;
+    text-align: justify;
 }
 
 .eventText {
-    width: 15em;
+    width: 10em;
+    text-align:justify;
+    font-size:20px;
 }
 
 .eventClick {
@@ -81,15 +84,29 @@ li {
 
 .dateEvent {
     font-weight: bold;
+    text-align:center;
 }
 
-#event1photo, #event2photo, #event3photo {
-    height: 15em;
-    width: 15em
+.eventPhoto {
+    height: 10em;
+    width: 10em;
 }
+
 .eventTitle {
     font-size:1.5em;
+    text-align: center;
 }
+
+.firstColumn, .secondColumn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.price {
+    text-align:center;
+}
+
 
 /* End Programmation Section*/
 h2 {
@@ -155,6 +172,17 @@ h3 {
     font-size: 1.8em;
     margin-top: 6%;
 }
+.restaurationtextetitre2 {
+    margin-left: 22%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.restaurationtextetitre {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
 
 .restaurationtexte {
     margin-left: 6%;
@@ -205,28 +233,11 @@ h3 {
 }
    
 .morph:hover img {
-    width: 250px; /* on affiche l'image au carré */
+    width: 250px;
     height: 250px;
-    border-radius: 80%;  /* on arrondit l'image */
-    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    border-radius: 80%;
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-}
-
-table {
-    margin-top: 100px;
-    margin-right: 20%;
-    margin-left: 20%;
-    border: 1px solid #C5404D;
-    width: 80%;
-    font-size: 20pt;
-    empty-cells: hide;
-}
-th, td {
-    border: 1px solid #C5404D;
-    text-align: center;
-    font-family: "varela round", sans-serif;
-    font-size: 20pt;
-    
 }
 
 .tftable {
@@ -236,7 +247,8 @@ th, td {
     width:40%;
     border-width: 1px;
     border-color: #c5404D;
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
+    border-radius: 16px;
    
 }
     
@@ -249,6 +261,8 @@ th, td {
     border-style: solid;
     border-color: #c5404D;
     text-align:left;
+    border-radius: 16px;
+    
     
 }
 
@@ -256,6 +270,8 @@ th, td {
 .tftable tr {
     color:black;
     background-color: beige;
+    border-radius: 16px;
+   
    
 }
 
@@ -266,6 +282,8 @@ th, td {
     padding: 8px;
     border-style: solid;
     border-color: #c5404D;
+    border-radius: 16px;
+    
     
 }
 
