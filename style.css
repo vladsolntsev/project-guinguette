@@ -208,8 +208,16 @@ li {
 /* End Programmation Section*/
 h2 {
     text-align: center;
-    font-size: 2.3em;
+    font-size: 3rem;
     margin-top: 6%;
+    margin-bottom: 1%;
+}
+
+.borderTop {
+    margin-bottom: 6%;
+    width: 30%;
+    margin-left: 39%;
+    border-top: solid black 6px;
 }
 
 #landingPicture {
@@ -266,7 +274,7 @@ h1 {
 
 h3 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.8rem;
     margin-top: 6%;
 }
 
@@ -420,6 +428,56 @@ th, td {
     border-radius: 8px;
     transition: width 1s;
 }
+form {
+    --cb-contact: white;
+    --cb-contact--invalid: #d26c76;
+}
+
+form input{
+    background-color: var(--cb-contact);
+    transition: background-color 500ms;
+}
+
+form input[type=text] {
+    font-size: 130%;
+}
+
+form input[type=email] {
+    font-size: 130%;
+}
+
+form input[type=tel] {
+    font-size: 130%;
+}
+
+form input:not(:focus):invalid{
+    background-color: var(--cb-contact--invalid);
+}
+
+form input:focus {
+     border: 2px solid var(--cb-contact--invalid);
+ }
+
+form input::placeholder {
+    color: #ffffff69;
+}
+
+form textarea{
+    background-color: var(--cb-contact);
+    transition: background-color 500ms;
+}
+
+form textarea:not(:focus):invalid{
+    background-color: var(--cb-contact--invalid);
+}
+
+form textarea:focus {
+    border: 2px solid var(--cb-contact--invalid);
+}
+
+form textarea::placeholder {
+    color: #ffffff69;
+}
 
 .contactItems {
     margin-bottom: 1.1em;
@@ -437,11 +495,15 @@ input, textarea, button {
 
 input{
     width: 40%;
+
 }
 
+
 textarea {
-    width: 40%;
+    background-color: $cd-txt;
+    width: 75%;
     height: 10%;
+    font-size: 130%;
 }
 
 .contactTitles {
@@ -463,10 +525,24 @@ textarea {
 
 button {
     width: inherit;
-    font-size: 1.3em;
+    font-size: 2rem;
     color: beige;
     margin-top: 2em;
     background-color: #C5404D;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 
