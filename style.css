@@ -141,7 +141,7 @@ h1 {
 }
 
 #mainLogo {
-    margin-left: 1600px;
+    margin-left: 1348px;
     transition: 2.4s;
     transition-timing-function: cubic-bezier(.85,1.1,.7,-0.56);
 }
@@ -426,19 +426,21 @@ text-align: center;
     margin-left: 25%;
 }
 /* TEST COMPTEUR */
+
 #compteur {
-    background-color: black;
+    background-color:#C5404D;
     position: fixed;
-    top: 565px;
+    top: 557px;
     right: 1px;
     width: 12%;
-    border: 3px solid black;
+    background-color:#C5404D;
+    border: 1px solid ;
     border-radius: 20px;
     font-size: 20px;
-    margin-left: 10px;
     padding: 5px 11px 7px 13px;
-    color: #C5404D;
+    color:beige;
     font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
 }
 /* FIN DE TEST COMPTEUR */
 
@@ -474,7 +476,11 @@ text-align: center;
     button {
         padding: 0 20%;
     }
-
+    .restaurationtextetitre {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
     #histoire {
         text-align: center;
         background-size: cover;
@@ -483,7 +489,9 @@ text-align: center;
         width: 100%;
         height: 50%;
     }
-
+    .tftable {
+        width: 82%;
+    }
     #histoirePicture {
         display: none;
     }
@@ -513,9 +521,10 @@ text-align: center;
         width: 80%;
     }
     p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-align: justify;
         line-height: 180%;
+        margin: 0px 0px 25px 0px;
     }
     .restaurationtexte {
         margin-left: 10%;
@@ -529,21 +538,21 @@ text-align: center;
     #compteur {
         background-color: black;
         position: fixed;
-        top: 700px;
-        right: 0px;
+        bottom: 0;
+        top: unset;
+        right: 0;
+        left: 0;
         width: 100%;
-        height: 45px;
         border: 0px solid black;
         border-radius: 0px;
         font-size: 24px;
-        margin-left: 10px;
         padding: 12px 11px 7px 13px;
         text-align: center;
         color: #C5404D;
         font-family: 'Roboto', sans-serif;
     }
     footer {
-        margin-bottom: 55px;
+        margin-bottom: 47px;
     }
 }
 @media screen and (min-width: 601px){
