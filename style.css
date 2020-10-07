@@ -401,6 +401,10 @@ text-align: center;
     height: auto;
     display: inline-block;
 }
+#histoirePicture{
+    width: 50%;
+    margin-left: 25%;
+}
 /* TEST COMPTEUR */
 #compteur {
     background-color: black;
