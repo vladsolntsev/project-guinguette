@@ -41,6 +41,96 @@ li {
 #menu-burger a:hover {
     color: #C5404D;
 }
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+        height: 170px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    li {
+        padding-top: 16px;
+    }
+    .burger-menu {
+        cursor: pointer;
+        font-size: 26px;
+        margin: 10px;
+    }
+    .contactSubject {
+        margin:0;
+    }
+
+    form {
+        margin-left: 0;
+    }
+
+    input {
+        width: 70%;
+    }
+    textarea{
+        width: 70%;
+    }
+    button {
+        padding: 0 20%;
+    }
+
+    #histoire {
+        text-align: center;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url('https://i0.wp.com/www.visiter-bordeaux.eu/wp-content/uploads/2019/06/11254157_833642916718059_3292309153825878100_n.jpg?fit=960%2C640&ssl=1');
+        width: 100%;
+        height: 50%;
+    }
+
+    #histoirePicture {
+        display: none;
+    }
+
+    #gMaps iframe {
+    height: 200px;
+    }
+
+    .smallFooter {
+        display: inline-block;
+    }
+
+    .footerMenu {
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 601px){
+    .burger-menu {
+        display: none;
+    }
+    .contactSubject {
+        margin-left: 17%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form {
+        margin-left: 17%;
+        margin-top: 4%;
+    }
+
+    button {
+        padding: 0 6em;
+    }
+    .footerMenu {
+        font-size: 1.6em;
+    }
+
+    .smallFooter {
+        display: contents;
+    }
+}
 .burger-menu {
     cursor: pointer;
     font-size: 26px;
@@ -62,10 +152,14 @@ li {
 #programmation {
     width:80%;
     height:auto;
-    margin:0 auto;
+    margin: 0 auto;
 }
 .event {
     align-content: center;
+    justify-content: space-evenly;
+    flex:wrap;
+    flex-grow:1;
+    flex-basis:33%;
 }
 .eventDescription {
     display: none;
@@ -74,9 +168,10 @@ li {
 }
 
 .eventText {
-    width:15em;
+    width:14em;
     text-align:justify;
     font-size:20px;
+    margin: 0 auto;
 }
 
 .eventClick {
@@ -90,8 +185,8 @@ li {
 }
 
 .eventPhoto {
-    height: 10em;
-    width: 10em;
+    height: 12em;
+    width: 12em;
 }
 
 .eventTitle {
@@ -174,17 +269,6 @@ h3 {
     font-size: 1.8em;
     margin-top: 6%;
 }
-.restaurationtextetitre2 {
-    margin-left: 22%;
-    margin-right: 20%;
-    text-align: center;
-}
-
-.restaurationtextetitre {
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: center;
-}
 
 .restaurationtexte {
     margin-left: 6%;
@@ -235,11 +319,28 @@ h3 {
 }
    
 .morph:hover img {
-    width: 250px;
+    width: 250px; /* on affiche l'image au carré */
     height: 250px;
-    border-radius: 80%;
-    -webkit-transform: rotate(360deg);
+    border-radius: 80%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
     transform: rotate(360deg);
+}
+
+table {
+    margin-top: 100px;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 1px solid #C5404D;
+    width: 80%;
+    font-size: 20pt;
+    empty-cells: hide;
+}
+th, td {
+    border: 1px solid #C5404D;
+    text-align: center;
+    font-family: "varela round", sans-serif;
+    font-size: 20pt;
+    
 }
 
 .tftable {
@@ -249,8 +350,7 @@ h3 {
     width:40%;
     border-width: 1px;
     border-color: #c5404D;
-    /*border-collapse: collapse;*/
-    border-radius: 16px;
+    border-collapse: collapse;
    
 }
     
@@ -263,8 +363,6 @@ h3 {
     border-style: solid;
     border-color: #c5404D;
     text-align:left;
-    border-radius: 16px;
-    
     
 }
 
@@ -272,8 +370,6 @@ h3 {
 .tftable tr {
     color:black;
     background-color: beige;
-    border-radius: 16px;
-   
    
 }
 
@@ -284,8 +380,6 @@ h3 {
     padding: 8px;
     border-style: solid;
     border-color: #c5404D;
-    border-radius: 16px;
-    
     
 }
 
@@ -421,26 +515,6 @@ text-align: center;
     height: auto;
     display: inline-block;
 }
-#histoirePicture{
-    width: 50%;
-    margin-left: 25%;
-}
-/* TEST COMPTEUR */
-#compteur {
-    background-color: black;
-    position: fixed;
-    top: 565px;
-    right: 1px;
-    width: 12%;
-    border: 3px solid black;
-    border-radius: 20px;
-    font-size: 20px;
-    margin-left: 10px;
-    padding: 5px 11px 7px 13px;
-    color: #C5404D;
-    font-family: 'Roboto', sans-serif;
-}
-/* FIN DE TEST COMPTEUR */
 
 @media screen and (max-width: 600px) {
     nav {
@@ -503,12 +577,6 @@ text-align: center;
         transition: 0s;
         position: static;
     }
-    #gMaps iframe {
-        height: 200px;
-        }
-    .contactSubject {
-        margin:0;
-    }
     #histoirePicture {
         width: 80%;
     }
@@ -521,49 +589,15 @@ text-align: center;
         margin-left: 10%;
         margin-right: 10%;
     }
-    .grayscale:hover img {
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-        transform:scale(1.3);
-    }
-    #compteur {
-        background-color: black;
-        position: fixed;
-        top: 700px;
-        right: 0px;
-        width: 100%;
-        height: 45px;
-        border: 0px solid black;
-        border-radius: 0px;
-        font-size: 24px;
-        margin-left: 10px;
-        padding: 12px 11px 7px 13px;
-        text-align: center;
-        color: #C5404D;
-        font-family: 'Roboto', sans-serif;
-    }
-    footer {
-        margin-bottom: 55px;
-    }
 }
 @media screen and (min-width: 601px){
     .burger-menu {
         display: none;
     }
-    .contactSubject {
-        margin-left: 17%;
-    }
-
-    .flex {
-        display: flex;
-        flex-direction: row;
-    }
-
     form {
         margin-left: 17%;
         margin-top: 4%;
     }
-
     button {
         padding: 0 6em;
     }
@@ -574,5 +608,13 @@ text-align: center;
     .smallFooter {
         display: contents;
     }
+}
+.burger-menu {
+    cursor: pointer;
+    font-size: 26px;
+    margin: 10px;
+}
+.display-block {
+    display: block;
 }
 /* End navigation bar */
