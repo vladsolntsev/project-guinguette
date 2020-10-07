@@ -19,3 +19,25 @@ reservations.addEventListener('click', function() {
 
     }
 );
+    const mainButton = document.getElementById("shake");
+    const firstname = document.getElementById("prenom");
+    const lastname = document.getElementById("nom");
+    const telephone = document.getElementById("telephone");
+    const email = document.getElementById("e-mail");
+    const message = document.getElementById("message");
+    mainButton.addEventListener('mouseover', function () {
+            if (
+                !telephone.checkValidity() ||
+                !firstname.checkValidity() ||
+                !lastname.checkValidity()  ||
+                !telephone.checkValidity() ||
+                !email.checkValidity()     ||
+                !message.checkValidity()
+            ) {
+                mainButton.style.animation = 'shake 0.5s';
+                mainButton.style.animationIterationCount = '2';
+/*              mainButton.style.backgroundColor = '#621e24';*/
+
+            };
+        }
+    );

@@ -62,10 +62,14 @@ li {
 #programmation {
     width:80%;
     height:auto;
-    margin:0 auto;
+    margin: 0 auto;
 }
 .event {
     align-content: center;
+    justify-content: space-evenly;
+    flex:wrap;
+    flex-grow:1;
+    flex-basis:33%;
 }
 .eventDescription {
     display: none;
@@ -74,9 +78,10 @@ li {
 }
 
 .eventText {
-    width:15em;
+    width:14em;
     text-align:justify;
     font-size:20px;
+    margin: 0 auto;
 }
 
 .eventClick {
@@ -90,8 +95,8 @@ li {
 }
 
 .eventPhoto {
-    height: 10em;
-    width: 10em;
+    height: 12em;
+    width: 12em;
 }
 
 .eventTitle {
@@ -113,8 +118,16 @@ li {
 /* End Programmation Section*/
 h2 {
     text-align: center;
-    font-size: 2.3em;
+    font-size: 3rem;
     margin-top: 6%;
+    margin-bottom: 1%;
+}
+
+.borderTop {
+    margin-bottom: 6%;
+    width: 30%;
+    margin-left: 39%;
+    border-top: solid black 6px;
 }
 
 #landingPicture {
@@ -171,19 +184,8 @@ h1 {
 
 h3 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.8rem;
     margin-top: 6%;
-}
-.restaurationtextetitre2 {
-    margin-left: 22%;
-    margin-right: 20%;
-    text-align: center;
-}
-
-.restaurationtextetitre {
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: center;
 }
 
 .restaurationtexte {
@@ -235,11 +237,28 @@ h3 {
 }
    
 .morph:hover img {
-    width: 250px;
+    width: 250px; /* on affiche l'image au carré */
     height: 250px;
-    border-radius: 80%;
-    -webkit-transform: rotate(360deg);
+    border-radius: 80%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
     transform: rotate(360deg);
+}
+
+table {
+    margin-top: 100px;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 1px solid #C5404D;
+    width: 80%;
+    font-size: 20pt;
+    empty-cells: hide;
+}
+th, td {
+    border: 1px solid #C5404D;
+    text-align: center;
+    font-family: "varela round", sans-serif;
+    font-size: 20pt;
+    
 }
 
 .tftable {
@@ -249,8 +268,7 @@ h3 {
     width:40%;
     border-width: 1px;
     border-color: #c5404D;
-    /*border-collapse: collapse;*/
-    border-radius: 16px;
+    border-collapse: collapse;
    
 }
     
@@ -263,8 +281,6 @@ h3 {
     border-style: solid;
     border-color: #c5404D;
     text-align:left;
-    border-radius: 16px;
-    
     
 }
 
@@ -272,8 +288,6 @@ h3 {
 .tftable tr {
     color:black;
     background-color: beige;
-    border-radius: 16px;
-   
    
 }
 
@@ -284,8 +298,6 @@ h3 {
     padding: 8px;
     border-style: solid;
     border-color: #c5404D;
-    border-radius: 16px;
-    
     
 }
 
@@ -326,6 +338,56 @@ h3 {
     border-radius: 8px;
     transition: width 1s;
 }
+form {
+    --cb-contact: white;
+    --cb-contact--invalid: #d26c76;
+}
+
+form input{
+    background-color: var(--cb-contact);
+    transition: background-color 500ms;
+}
+
+form input[type=text] {
+    font-size: 130%;
+}
+
+form input[type=email] {
+    font-size: 130%;
+}
+
+form input[type=tel] {
+    font-size: 130%;
+}
+
+form input:not(:focus):invalid{
+    background-color: var(--cb-contact--invalid);
+}
+
+form input:focus {
+     border: 2px solid var(--cb-contact--invalid);
+ }
+
+form input::placeholder {
+    color: #ffffff69;
+}
+
+form textarea{
+    background-color: var(--cb-contact);
+    transition: background-color 500ms;
+}
+
+form textarea:not(:focus):invalid{
+    background-color: var(--cb-contact--invalid);
+}
+
+form textarea:focus {
+    border: 2px solid var(--cb-contact--invalid);
+}
+
+form textarea::placeholder {
+    color: #ffffff69;
+}
 
 .contactItems {
     margin-bottom: 1.1em;
@@ -343,11 +405,14 @@ input, textarea, button {
 
 input{
     width: 40%;
+
 }
 
+
 textarea {
-    width: 40%;
+    width: 75%;
     height: 10%;
+    font-size: 130%;
 }
 
 .contactTitles {
@@ -369,10 +434,24 @@ textarea {
 
 button {
     width: inherit;
-    font-size: 1.3em;
+    font-size: 2rem;
     color: beige;
     margin-top: 2em;
     background-color: #C5404D;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 
@@ -464,6 +543,9 @@ text-align: center;
     #menu-burger {
         height: 200px;
     }
+    .contactSubject {
+        margin:0;
+    }
     form {
         margin-left: 0;
     }
@@ -503,6 +585,9 @@ text-align: center;
     .footerMenu {
         font-size: 1.1em;
     }
+    #gMaps iframe {
+        height: 200px;
+    }
     h1 {
         display: none;
     }
@@ -510,12 +595,6 @@ text-align: center;
         margin: 0;
         transition: 0s;
         position: static;
-    }
-    #gMaps iframe {
-        height: 200px;
-        }
-    .contactSubject {
-        margin:0;
     }
     #histoirePicture {
         width: 80%;
@@ -559,20 +638,10 @@ text-align: center;
     .burger-menu {
         display: none;
     }
-    .contactSubject {
-        margin-left: 17%;
-    }
-
-    .flex {
-        display: flex;
-        flex-direction: row;
-    }
-
     form {
         margin-left: 17%;
         margin-top: 4%;
     }
-
     button {
         padding: 0 6em;
     }
