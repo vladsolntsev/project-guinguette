@@ -60,6 +60,7 @@
         <div id="titreProgrammation">
             <h2>Programmation</h2>
         </div>
+        <div class="borderTop"></div>
         <div id="programmation">
             <div id="event1">
                 <p class="eventTitle">Concert de Neffex</p>
@@ -115,11 +116,10 @@
 <!-- fin de la section programmation -->
 
 <!--start menu section-->
-
-    <h2 id="restauration">Restauration</h2>
-    
-    
-    <br>
+    <div>
+        <h2 id="restauration">Restauration</h2>
+    </div>
+    <div class="borderTop"></div>
     <section class="container2">
         <article><img src="images/biere5.jpg" alt="biere1" width="250"></article>
         <article><img src="images/frites.jpg" alt="biere2" width="250"></article>
@@ -400,7 +400,10 @@
 <!--end menu section-->
 
 <!-- History section -->
-    <h2 id="titreHistoire">Notre histoire</h2>
+    <div>
+        <h2 id="titreHistoire">Notre histoire</h2>
+    </div>
+    <div class="borderTop"></div>
     <div id='histoire'>
         <img id="histoirePicture"
              src="https://i0.wp.com/www.visiter-bordeaux.eu/wp-content/uploads/2019/06/11254157_833642916718059_3292309153825878100_n.jpg?fit=960%2C640&ssl=1"
@@ -445,7 +448,10 @@
 <!-- End of history section -->
 <!-- Contact section -->
     <section id='formulaire'>
-        <h2>Contact / Réservations</h2>
+        <div>
+            <h2>Contact / Réservations</h2>
+        </div>
+        <div class="borderTop"></div>
         <div id="contactPresentation">
             <p class="contactMainSentences">Envie de réserver vos billets dès aujourd'hui ? Besoin d'informations ?</p>
             <p class="contactMainSentences">Nous vous répondrons au plus vite !</p>
@@ -459,22 +465,22 @@
                 <div class="contactItems">
                     <div class="contactTitles" id='firstName'>Prénom : </div>
                     <label for = 'prenom'></label>
-                    <input type='text' id='prenom' placeholder = "Alriq" name='user_first_name'>
+                    <input type='text' id="prenom" placeholder = "Alriq" name='user_first_name' required>
                 </div>
                 <div class="contactItems">
                     <div class="contactTitles">Nom : </div>
                     <label for ='nom'></label>
-                    <input type = 'text' id = 'nom' placeholder = 'Guinguette' name = 'user_last_name'>
+                    <input type = 'text' id = 'nom' placeholder = 'Guinguette' name = 'user_last_name' required>
                 </div>
                 <div class="contactItems">
                     <div class="contactTitles">e-mail : </div>
                     <label for='e-mail'></label>
-                    <input type = 'email' id='e-mail' placeholder = 'alriq@guinguette.fr' name='user_mail'>
+                    <input type = 'email' id='e-mail' placeholder = 'alriq@guinguette.fr' name='user_mail' required>
                 </div>
                 <div class="contactItems">
                     <div class="contactTitles">Téléphone : </div>
                     <label for='telephone'></label>
-                    <input type='tel' id='telephone' placeholder = '0102030405' name='user_phone' pattern='[0-9]{10}'>
+                    <input type='tel' id='telephone' placeholder = '0102030405' name='user_phone' pattern='[0-9]{10}' required>
                 </div>
                 <!-- This is just a test
                 <div>
@@ -488,10 +494,10 @@
                 <div>
                     <div class="contactTitles">Message : </div>
                     <label for='message'></label>
-                    <textarea id='message' placeholder = 'Mon super message' name='user_message' rows="10"></textarea>
+                    <textarea id='message' placeholder = 'Mon super message' name='user_message' rows="10" required></textarea>
                 </div>
                 <div  class='button'>
-                    <button  type='submit'>Envoyer</button>
+                    <button id="shake" type='submit'>Envoyer</button>
                 </div>
             </form>
             <div id="gMaps">
