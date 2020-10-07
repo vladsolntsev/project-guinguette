@@ -157,12 +157,14 @@ li {
 
 .eventDescription {
     display: none;
+    align-content: center;
+    text-align: justify;
 }
 
 .eventText {
-    width: 9em;
+    width: 10em;
     text-align:justify;
-    font-size:15px;
+    font-size:20px;
 }
 
 .eventClick {
@@ -172,7 +174,7 @@ li {
 
 .dateEvent {
     font-weight: bold;
-    text-align:justify;
+    text-align:center;
 }
 
 .eventPhoto {
@@ -191,7 +193,9 @@ li {
     justify-content: space-between;
     text-align: center;
 }
-
+.price {
+    text-align:center;
+}
 
 
 /* End Programmation Section*/
