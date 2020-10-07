@@ -150,10 +150,9 @@ li {
 /* Programmation Section CSS */
 
 #programmation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
+    width:80%;
+    height:auto;
+    margin:0 auto;
 }
 
 .eventDescription {
@@ -161,7 +160,9 @@ li {
 }
 
 .eventText {
-    width: 15em;
+    width: 9em;
+    text-align:justify;
+    font-size:15px;
 }
 
 .eventClick {
@@ -171,15 +172,27 @@ li {
 
 .dateEvent {
     font-weight: bold;
+    text-align:justify;
 }
 
-#event1photo, #event2photo, #event3photo {
-    height: 15em;
-    width: 15em
+.eventPhoto {
+    height: 10em;
+    width: 10em;
 }
+
 .eventTitle {
     font-size:1.5em;
+    text-align: center;
 }
+
+.firstColumn, .secondColumn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
 
 /* End Programmation Section*/
 h2 {
