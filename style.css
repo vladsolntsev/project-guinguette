@@ -154,7 +154,9 @@ li {
     height:auto;
     margin:0 auto;
 }
-
+.event {
+    align-content: center;
+}
 .eventDescription {
     display: none;
     align-content: center;
@@ -162,7 +164,7 @@ li {
 }
 
 .eventText {
-    width: 10em;
+    width:15em;
     text-align:justify;
     font-size:20px;
 }
