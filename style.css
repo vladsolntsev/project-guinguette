@@ -90,9 +90,6 @@ li {
         display: none;
     }
 
-    #gMaps iframe {
-    height: 200px;
-    }
 
     .smallFooter {
         display: inline-block;
@@ -131,6 +128,7 @@ li {
         display: contents;
     }
 }
+
 .burger-menu {
     cursor: pointer;
     font-size: 26px;
@@ -154,13 +152,15 @@ li {
     height:auto;
     margin: 0 auto;
 }
+
 .event {
     align-content: center;
     justify-content: space-evenly;
-    flex:wrap;
+    flex-wrap: wrap;
     flex-grow:1;
     flex-basis:33%;
 }
+
 .eventDescription {
     display: none;
     align-content: center;
@@ -168,7 +168,7 @@ li {
 }
 
 .eventText {
-    width:14em;
+    width: 10em;
     text-align:justify;
     font-size:20px;
     margin: 0 auto;
@@ -244,7 +244,7 @@ h1 {
 }
 
 #mainLogo {
-    margin-left: 1600px;
+    margin-left: 1348px;
     transition: 2.4s;
     transition-timing-function: cubic-bezier(.85,1.1,.7,-0.56);
 }
@@ -281,6 +281,10 @@ h3 {
 .restaurationtexte {
     margin-left: 6%;
     margin-right: 6%;
+    text-align: center;
+}
+
+.restaurationtextecentrer {
     text-align: center;
 }
 
@@ -338,7 +342,6 @@ table {
     margin-top: 100px;
     margin-right: 20%;
     margin-left: 20%;
-    border: 1px solid #C5404D;
     width: 80%;
     font-size: 20pt;
     empty-cells: hide;
@@ -348,20 +351,19 @@ th, td {
     text-align: center;
     font-family: "varela round", sans-serif;
     font-size: 20pt;
-    
 }
 
 .tftable {
     font-size:20px;
     color:beige;
     font-family: "varela round",sans serif;
-    width:40%;
+    width:82%;
     border-width: 1px;
     border-color: #c5404D;
-    border-collapse: collapse;
-   
+    border-radius: 16px;
 }
-    
+
+
 .tftable th {
     font-size:20px;
     color:beige;
@@ -371,14 +373,14 @@ th, td {
     border-style: solid;
     border-color: #c5404D;
     text-align:left;
-    
+    border-radius: 16px;
 }
 
 
 .tftable tr {
     color:black;
     background-color: beige;
-   
+    border-radius: 16px;
 }
 
 
@@ -388,7 +390,7 @@ th, td {
     padding: 8px;
     border-style: solid;
     border-color: #c5404D;
-    
+    border-radius: 16px;
 }
 
 .tftable tr:hover {
@@ -548,6 +550,7 @@ button {
 #gMaps {
     text-align: center;
     margin-top: 9%;
+    overflow: hidden;
 }
 
 
@@ -555,8 +558,8 @@ button {
 
 footer {
     background-color: #C5404D;
-    padding: 2%;
     padding: 0.4%;
+    width: 100%;
 }
 
 .footerMenu {
@@ -590,6 +593,27 @@ text-align: center;
     height: auto;
     display: inline-block;
 }
+#histoirePicture{
+    width: 50%;
+    margin-left: 25%;
+}
+/* TEST COMPTEUR */
+
+#compteur {
+    background-color:#C5404D;
+    position: fixed;
+    top: 557px;
+    right: 1px;
+    width: 12%;
+    border: 1px solid ;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px 11px 7px 13px;
+    color:beige;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+}
+/* FIN DE TEST COMPTEUR */
 
 @media screen and (max-width: 600px) {
     nav {
@@ -611,6 +635,9 @@ text-align: center;
     #menu-burger {
         height: 200px;
     }
+    .contactSubject {
+        margin:0;
+    }
     form {
         margin-left: 2%;
     }
@@ -623,7 +650,11 @@ text-align: center;
     button {
         padding: 0 20%;
     }
-
+    .restaurationtextetitre {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
     #histoire {
         text-align: center;
         background-size: cover;
@@ -644,6 +675,7 @@ text-align: center;
     .footerMenu {
         font-size: 1.1em;
     }
+
     h1 {
         display: none;
     }
@@ -656,13 +688,39 @@ text-align: center;
         width: 80%;
     }
     p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-align: justify;
         line-height: 180%;
+        margin: 0px 0px 25px 0px;
     }
     .restaurationtexte {
         margin-left: 10%;
         margin-right: 10%;
+    }
+    .grayscale:hover img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        transform:scale(1.3);
+    }
+    #compteur {
+        background-color: black;
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        right: 0;
+        left: 0;
+        width: 100%;
+        border: 0px solid black;
+        border-radius: 0px;
+        font-size: 24px;
+        padding: 12px 11px 7px 13px;
+        text-align: center;
+        color: #C5404D;
+        font-family: 'Roboto', sans-serif;
+        opacity: 0.8;
+    }
+    footer {
+        margin-bottom: 47px;
     }
 }
 @media screen and (min-width: 601px){
@@ -683,13 +741,5 @@ text-align: center;
     .smallFooter {
         display: contents;
     }
-}
-.burger-menu {
-    cursor: pointer;
-    font-size: 26px;
-    margin: 10px;
-}
-.display-block {
-    display: block;
 }
 /* End navigation bar */

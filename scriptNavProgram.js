@@ -25,7 +25,7 @@ for (let i = 0; i < buttons.length; i++) {
 var affiche=document.getElementById("Compte");
     function Rebour() {
     var date1 = new Date();
-    var date2 = new Date ("Oct 7 16:45:00 2020");
+    var date2 = new Date ("Oct 9 17:00:00 2020");
     var sec = (date2 - date1) / 1000;
     var n = 24 * 3600;
     if (sec > 0) {
