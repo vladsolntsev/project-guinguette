@@ -132,7 +132,9 @@ h2 {
     margin-left: 39%;
     border-top: solid black 6px;
 }
-
+#landingSection {
+    background-color: black;
+}
 #landingPicture {
     width: 100%;
     height: auto;
